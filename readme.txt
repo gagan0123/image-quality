@@ -27,6 +27,8 @@ or if you are familiar with WP-CLI, then you can use this command to regenerate
 
 `wp media regenerate`
 
+P.S. It does not change the quality of the original image that you upload, 
+but only changes the quality of the thumbnails WordPress generates from that image.
 
 == Installation ==
 1. Add the plugin's folder in the WordPress' plugin directory.
