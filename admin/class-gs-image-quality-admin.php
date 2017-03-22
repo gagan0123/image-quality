@@ -81,6 +81,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 
 			if ( $sanitized_input > 0 && $sanitized_input <= 100 ) {
 				//Input field is correctly set
+				return $sanitized_input;
 			} else if ( empty( $input ) ) {
 				//Input is empty
 				$is_error	 = true;
@@ -95,7 +96,8 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 				add_settings_error( $setting_id, 'settings_updated', $message, 'error' );
 				return GS_Image_Quality::get_instance()->get_image_quality();
 			}
-
+			
+			//I know this line will never execute, but still feel like keeping it here :)
 			return $sanitized_input;
 		}
 
