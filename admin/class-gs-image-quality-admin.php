@@ -109,7 +109,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 
 			echo "<input type='number' name='{$setting_id}' id='{$setting_id}' min='1' max='100' value='{$quality}' />";
 			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', GS_IQ_TEXTDOMAIN ); ?></span>
-			<p class="description"><?php printf( esc_html_e( 'By default WordPress uses %s', GS_IQ_TEXTDOMAIN ), '<b>90</b>' ); ?></p><?php
+			<p class="description"><?php printf( esc_html__( 'By default WordPress uses %s', GS_IQ_TEXTDOMAIN ), '<b>90</b>' ); ?></p><?php
 		}
 
 	}
