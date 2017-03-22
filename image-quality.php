@@ -28,6 +28,9 @@ define( 'GS_IQ_SETTINGS_SLUG', GS_IQ_PREFIX . '_image_quality' );
  */
 require_once GS_IQ_PATH . 'includes/class-gs-image-quality.php';
 
+/**
+ * Load the admin class if its the admin dashboard
+ */
 if ( is_admin() ) {
 	require_once GS_IQ_PATH . 'admin/class-gs-image-quality-admin.php';
 }

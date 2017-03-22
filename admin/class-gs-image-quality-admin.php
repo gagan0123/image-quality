@@ -18,6 +18,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 		 */
 		public function __construct() {
 			add_action( 'admin_init', array( $this, 'page_init' ) );
+			add_action( 'plugins_loaded', array( $this, 'init_localization' ) );
 		}
 
 		public static function get_instance() {
@@ -28,6 +29,13 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			}
 
 			return self::$instance;
+		}
+
+		/**
+		 * Initialize localization
+		 */
+		public function init_localization() {
+			load_plugin_textdomain( GS_IQ_TEXTDOMAIN );
 		}
 
 		/**
@@ -76,11 +84,11 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			} else if ( empty( $input ) ) {
 				//Input is empty
 				$is_error	 = true;
-				$message	 = __( 'Image Quality cannot be empty.', GS_IQ_TEXTDOMAIN );
+				$message	 = esc_html__( 'Image Quality cannot be empty.', GS_IQ_TEXTDOMAIN );
 			} else {
 				//Input field is containing something else
 				$is_error	 = true;
-				$message	 = __( 'Image Quality can only be a number between 1 to 100.', GS_IQ_TEXTDOMAIN );
+				$message	 = esc_html__( 'Image Quality can only be a number between 1 to 100.', GS_IQ_TEXTDOMAIN );
 			}
 
 			if ( $is_error ) {
@@ -92,12 +100,14 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 		}
 
 		public function render_image_quality_field( $args ) {
+			//Lets initialize our variables
 			$setting_id			 = GS_IQ_PREFIX . '_image_quality';
 			$gs_image_quality	 = GS_Image_Quality::get_instance();
 			$quality			 = $gs_image_quality->get_image_quality();
 
-			echo '<input type="number" name="' . $setting_id . '" min="0" max="100" value="' . $quality . '" />';
-			?> <span class="description"><?php _e( 'Set value between 0 to 100', 'google_tag_manager' ); ?></span><?php
+			echo "<input type='number' name='{$setting_id}' id='{$setting_id}' min='1' max='100' value='{$quality}' />";
+			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', GS_IQ_TEXTDOMAIN ); ?></span>
+			<p class="description"><?php printf( esc_html_e( 'By default WordPress uses %s', GS_IQ_TEXTDOMAIN ), '<b>90</b>' ); ?></p><?php
 		}
 
 	}
