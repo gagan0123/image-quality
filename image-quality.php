@@ -4,10 +4,10 @@
   Plugin Name: Image Quality
   Plugin URI:  https://gagan0123.com/image-quality
   Description: Plugin to let you adjust compression ratio WordPress uses in media settings
-  Version:     0.1
+  Version:     1.0
   Author:      Gagan Deep Singh
   Author URI:  https://gagan0123.com
-  License:     GPL2
+  License:     GPLv2
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
   Text Domain: gs_iq
   Domain Path: /languages
