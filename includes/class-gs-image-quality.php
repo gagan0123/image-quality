@@ -35,11 +35,15 @@ if ( !class_exists( 'GS_Image_Quality' ) ) {
 		}
 
 		public function init() {
+			//Lets set up our image_quality variable from settings
 			$this->image_quality = get_option( GS_IQ_SETTINGS_SLUG, 90 );
 		}
 
+		/**
+		 * @return int Returns the image quality setting
+		 */
 		public function get_image_quality() {
-			return get_option( GS_IQ_SETTINGS_SLUG, $this->image_quality );
+			return (int)get_option( GS_IQ_SETTINGS_SLUG, $this->image_quality );
 		}
 
 	}
