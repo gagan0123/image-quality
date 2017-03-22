@@ -52,11 +52,6 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			// This function will render the input field
 			$callback = array( $this, 'render_image_quality_field' );
 
-			//Arguments to pass to the settings rendering function
-			$args = array(
-				'id' => $setting_id
-			);
-
 			//Adding the setting field
 			add_settings_field( $setting_id, $label, $callback, 'media', 'default', $args );
 
@@ -101,7 +96,10 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			return $sanitized_input;
 		}
 
-		public function render_image_quality_field( $args ) {
+		/**
+		 * Output the Image Quality setting field in Dashboard
+		 */
+		public function render_image_quality_field( ) {
 			//Lets initialize our variables
 			$setting_id			 = GS_IQ_PREFIX . '_image_quality';
 			$gs_image_quality	 = GS_Image_Quality::get_instance();
