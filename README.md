@@ -36,3 +36,6 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 #### 1.0 ####
 * Initial Public Release
+
+#### 1.1 ####
+* Fixed text domain for localization

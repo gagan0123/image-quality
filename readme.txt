@@ -3,7 +3,7 @@ Contributors: gagan0123
 Tags: image jpeg compression thumbnails media
 Requires at least: 4.1
 Tested up to: 4.7.3
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,3 +39,6 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 = 1.0 =
 * Initial Public Release
+
+= 1.1 =
+* Fixed text domain for localization
