@@ -35,7 +35,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 		 * Initialize localization
 		 */
 		public function init_localization() {
-			load_plugin_textdomain( GS_IQ_TEXTDOMAIN );
+			load_plugin_textdomain( 'gs-iq' );
 		}
 
 		/**
@@ -47,7 +47,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			$setting_id = GS_IQ_PREFIX . '_image_quality';
 
 			//Image Quality Setting Label
-			$label = '<label for="' . $setting_id . '">' . __( 'Image Quality', GS_IQ_TEXTDOMAIN ) . '</label>';
+			$label = '<label for="' . $setting_id . '">' . __( 'Image Quality', 'gs-iq' ) . '</label>';
 
 			// This function will render the input field
 			$callback = array( $this, 'render_image_quality_field' );
@@ -80,11 +80,11 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			} else if ( empty( $input ) ) {
 				//Input is empty
 				$is_error	 = true;
-				$message	 = esc_html__( 'Image Quality cannot be empty.', GS_IQ_TEXTDOMAIN );
+				$message	 = esc_html__( 'Image Quality cannot be empty.', 'gs-iq' );
 			} else {
 				//Input field is containing something else
 				$is_error	 = true;
-				$message	 = esc_html__( 'Image Quality can only be a number between 1 to 100.', GS_IQ_TEXTDOMAIN );
+				$message	 = esc_html__( 'Image Quality can only be a number between 1 to 100.', 'gs-iq' );
 			}
 
 			if ( $is_error ) {
@@ -106,8 +106,8 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			$quality			 = $gs_image_quality->get_image_quality();
 
 			echo "<input type='number' name='{$setting_id}' id='{$setting_id}' min='1' max='100' value='{$quality}' />";
-			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', GS_IQ_TEXTDOMAIN ); ?></span>
-			<p class="description"><?php printf( esc_html__( 'By default WordPress uses %s', GS_IQ_TEXTDOMAIN ), '<b>90</b>' ); ?></p><?php
+			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', 'gs-iq' ); ?></span>
+			<p class="description"><?php printf( esc_html__( 'By default WordPress uses %s', 'gs-iq' ), '<b>90</b>' ); ?></p><?php
 		}
 
 	}

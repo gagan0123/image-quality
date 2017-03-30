@@ -9,7 +9,7 @@
   Author URI:  https://gagan0123.com
   License:     GPLv2
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  Text Domain: gs_iq
+  Text Domain: gs-iq
   Domain Path: /languages
  */
 
@@ -20,7 +20,6 @@ if ( !defined( 'ABSPATH' ) ) {
 
 define( 'GS_IQ_PREFIX', 'gs_iq' );
 define( 'GS_IQ_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-define( 'GS_IQ_TEXTDOMAIN', GS_IQ_PREFIX );
 define( 'GS_IQ_SETTINGS_SLUG', GS_IQ_PREFIX . '_image_quality' );
 
 /**
