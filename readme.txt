@@ -1,6 +1,6 @@
 === Image Quality ===
 Contributors: gagan0123
-Tags: image jpeg compression thumbnails media
+Tags: image, jpeg, compression, thumbnails, media
 Requires at least: 4.1
 Tested up to: 4.7.3
 Stable tag: 1.1
@@ -42,3 +42,7 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 = 1.1 =
 * Fixed text domain for localization
+
+= 1.2 =
+* Another correction for localization
+* Fixing tags
