@@ -39,3 +39,7 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 #### 1.1 ####
 * Fixed text domain for localization
+
+#### 1.2 ####
+* Another correction for localization
+* Fixing tags
