@@ -53,7 +53,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 			$callback = array( $this, 'render_image_quality_field' );
 
 			//Adding the setting field
-			add_settings_field( $setting_id, $label, $callback, 'media', 'default', $args );
+			add_settings_field( $setting_id, $label, $callback, 'media', 'default' );
 
 			//Registering the setting
 			register_setting( 'media', GS_IQ_PREFIX . '_image_quality', array( $this, 'sanitize' ) );
