@@ -43,3 +43,6 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 #### 1.2 ####
 * Another correction for localization
 * Fixing tags
+
+#### 1.3 ####
+* Removed an unused variable causing issues while debug mode is on
