@@ -3,14 +3,15 @@
 # The difference is that this script lives in the plugin's git repo & doesn't require an existing SVN repo.
 
 # main config
-export PLUGINSLUG="image-quality"  #must match with wordpress.org plugin slug
-export MAINFILE="image-quality.php" # this should be the name of your main php file in the wordpress plugin
+export DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/.. && pwd )"
+export PLUGINSLUG="$(basename $DIR)"  #must match with wordpress.org plugin slug
+export MAINFILE="$PLUGINSLUG.php" # this should be the name of your main php file in the wordpress plugin
 
 ##### YOU CAN STOP EDITING HERE #####
 CURRENTDIR=`pwd`
 
 # git config
-GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
+GITPATH="$DIR/" # this file should be in the base of your git repository
 
 # svn config
 SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
@@ -163,6 +164,7 @@ svn propset svn:ignore "deploy.sh
 deploy-common.sh
 readme.sh
 README.md
+bin
 .git
 .gitattributes
 .gitignore
