@@ -2,8 +2,8 @@
 Contributors: gagan0123
 Tags: image, jpeg, compression, thumbnails, media
 Requires at least: 4.1
-Tested up to: 4.7.3
-Stable tag: 1.3
+Tested up to: 4.8
+Stable tag: 1.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,15 +37,19 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 == Changelog ==
 
-= 1.0 =
-* Initial Public Release
+= 1.4 =
+* Updated the changelog order
+* Updated WordPress' compatibility version
 
-= 1.1 =
-* Fixed text domain for localization
+= 1.3 =
+* Removed an unused variable causing issues while debug mode is on
 
 = 1.2 =
 * Another correction for localization
 * Fixing tags
 
-= 1.3 =
-* Removed an unused variable causing issues while debug mode is on
+= 1.1 =
+* Fixed text domain for localization
+
+= 1.0 =
+* Initial Public Release
