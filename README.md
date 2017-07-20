@@ -34,12 +34,16 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 ## Changelog ##
 
-#### 1.0 ####
-* Initial Public Release
-
-#### 1.1 ####
-* Fixed text domain for localization
+#### 1.3 ####
+* Updated the changelog order
+* Updated WordPress' compatibility version
 
 #### 1.2 ####
 * Another correction for localization
 * Fixing tags
+
+#### 1.1 ####
+* Fixed text domain for localization
+
+#### 1.0 ####
+* Initial Public Release
