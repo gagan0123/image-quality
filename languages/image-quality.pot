@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Image Quality 1.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/image-quality\n"
-"POT-Creation-Date: 2017-08-25 15:19:38+00:00\n"
+"POT-Creation-Date: 2017-08-25 15:43:21+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,7 +35,7 @@ msgid "By default WordPress uses %s"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://gagan0123.com/image-quality"
+msgid "https://wordpress.org/plugins/image-quality/"
 msgstr ""
 
 #. Description of the plugin/theme
