@@ -1,0 +1,20 @@
+{
+    "name": "image-quality",
+    "version": "1.0.1",
+    "main": "image-quality.php",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gagan0123/image-quality"
+    },
+    "keywords": [
+        "wordpress"
+    ],
+    "author": "Gagan Deep Singh",
+    "license": "GPL-2.0",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-wp-i18n": "^1.0.0",
+        "grunt-wp-readme-to-markdown": "^2.0.1"
+    },
+    "dependencies": {}
+}
