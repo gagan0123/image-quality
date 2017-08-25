@@ -1,9 +1,9 @@
 # Image Quality #
 **Contributors:** [gagan0123](https://profiles.wordpress.org/gagan0123)  
 **Tags:** image, jpeg, compression, thumbnails, media  
-**Requires at least:** 4.0  
+**Requires at least:** 2.8  
 **Tested up to:** 4.8.1  
-**Stable tag:** 1.4  
+**Stable tag:** 1.5  
 **License:** GPLv2  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -35,6 +35,11 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 1. Adjust the setting by entering a number between 1 to 100 in Image Quality setting
 
 ## Changelog ##
+
+### 1.5 ###
+* Better escaping of admin screen outputs
+* Added settings action link on the plugins page for easy access
+* Better documentation
 
 ### 1.4 ###
 * Updated the changelog order
