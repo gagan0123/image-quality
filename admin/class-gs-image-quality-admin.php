@@ -91,7 +91,7 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 				add_settings_error( $setting_id, 'settings_updated', $message, 'error' );
 				return GS_Image_Quality::get_instance()->get_image_quality();
 			}
-			
+
 			//I know this line will never execute, but still feel like keeping it here :)
 			return $sanitized_input;
 		}
@@ -99,11 +99,11 @@ if ( !class_exists( 'GS_Image_Quality_Admin' ) ) {
 		/**
 		 * Output the Image Quality setting field in Dashboard
 		 */
-		public function render_image_quality_field( ) {
+		public function render_image_quality_field() {
 			//Lets initialize our variables
 			$setting_id			 = GS_IQ_PREFIX . '_image_quality';
 			$gs_image_quality	 = GS_Image_Quality::get_instance();
-			$quality			 = $gs_image_quality->get_image_quality();
+			$quality			 = esc_attr( $gs_image_quality->get_image_quality() );
 
 			echo "<input type='number' name='{$setting_id}' id='{$setting_id}' min='1' max='100' value='{$quality}' />";
 			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', 'image-quality' ); ?></span>
