@@ -32,7 +32,9 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 1. Go to `Settings` > `Media` and set the Image Quality as needed.
 
 ## Screenshots ##
-1. Adjust the setting by entering a number between 1 to 100 in Image Quality setting
+### 1. Adjust the setting by entering a number between 1 to 100 in Image Quality setting ###
+![Adjust the setting by entering a number between 1 to 100 in Image Quality setting](https://ps.w.org/image-quality/assets/screenshot-1.png)
+
 
 ## Changelog ##
 
