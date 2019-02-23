@@ -1,8 +1,14 @@
+
+<img src='https://github.com/gagan0123/image-quality/raw/master/assets/icon-128x128.png' align='right' />
+
 # Image Quality #
-
-* **Contributors:** [gagan0123] (http://profiles.wordpress.org/gagan0123),
-
-* **License:** [GPL v2 or later] ( https://www.gnu.org/licenses/gpl-2.0.html)
+**Contributors:** [gagan0123](https://profiles.wordpress.org/gagan0123)  
+**Tags:** image, jpeg, compression, thumbnails, media  
+**Requires at least:** 4.1  
+**Tested up to:** 4.8  
+**Stable tag:** 1.3  
+**License:** GPLv2  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
 Lets you adjust the quality of image thumbnails WordPress generates
 
@@ -34,16 +40,16 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 ## Changelog ##
 
-#### 1.3 ####
+### 1.3 ###
 * Updated the changelog order
 * Updated WordPress' compatibility version
 
-#### 1.2 ####
+### 1.2 ###
 * Another correction for localization
 * Fixing tags
 
-#### 1.1 ####
+### 1.1 ###
 * Fixed text domain for localization
 
-#### 1.0 ####
+### 1.0 ###
 * Initial Public Release
