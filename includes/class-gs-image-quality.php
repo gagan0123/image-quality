@@ -1,4 +1,9 @@
 <?php
+/**
+ * Handles plugin's interaction with WordPress
+ *
+ * @package Image_Quality
+ */
 
 // If this file is called directly, abort.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -64,7 +69,7 @@ if ( ! class_exists( 'GS_Image_Quality' ) ) {
 		public static function get_instance() {
 
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance ) {
+			if ( null === self::$instance ) {
 				self::$instance = new self();
 			}
 
@@ -81,7 +86,7 @@ if ( ! class_exists( 'GS_Image_Quality' ) ) {
 		 * @return void
 		 */
 		public function init() {
-			// Lets set up our image_quality variable from settings
+			// Lets set up our image_quality variable from settings.
 			$this->image_quality = (int) get_option( GS_IQ_SETTINGS_SLUG, 90 );
 		}
 

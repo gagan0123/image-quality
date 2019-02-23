@@ -1,4 +1,10 @@
 <?php
+/**
+ * Handles admin side interactions of the plugin with WordPress
+ *
+ * @package Image_Quality
+ */
+
 // If this file is called directly, abort.
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
@@ -53,7 +59,7 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 		public static function get_instance() {
 
 			// If the single instance hasn't been set, set it now.
-			if ( null == self::$instance ) {
+			if ( null === self::$instance ) {
 				self::$instance = new self();
 			}
 
@@ -84,19 +90,19 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 		 */
 		public function page_init() {
 
-			// Image Quality Setting Field ID
+			// Image Quality Setting Field ID.
 			$setting_id = GS_IQ_PREFIX . '_image_quality';
 
-			// Image Quality Setting Label
+			// Image Quality Setting Label.
 			$label = '<label for="' . $setting_id . '">' . esc_html__( 'Image Quality', 'image-quality' ) . '</label>';
 
-			// This function will render the input field
+			// This function will render the input field.
 			$callback = array( $this, 'render_image_quality_field' );
 
-			// Adding the setting field
+			// Adding the setting field.
 			add_settings_field( $setting_id, $label, $callback, 'media', 'default' );
 
-			// Registering the setting
+			// Registering the setting.
 			register_setting( 'media', GS_IQ_PREFIX . '_image_quality', array( $this, 'sanitize' ) );
 		}
 
@@ -122,14 +128,14 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 			$message = '';
 
 			if ( $sanitized_input > 0 && $sanitized_input <= 100 ) {
-				// Input field is correctly set
+				// Input field is correctly set.
 				return $sanitized_input;
 			} elseif ( empty( $input ) ) {
-				// Input is empty
+				// Input is empty.
 				$is_error = true;
 				$message  = esc_html__( 'Image Quality cannot be empty.', 'image-quality' );
 			} else {
-				// Input field is containing something else
+				// Input field is containing something else.
 				$is_error = true;
 				$message  = esc_html__( 'Image Quality can only be a number between 1 to 100.', 'image-quality' );
 			}
@@ -139,7 +145,7 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 				return GS_Image_Quality::get_instance()->get_image_quality();
 			}
 
-			// I know this line will never execute, but still feel like keeping it here :)
+			// I know this line will never execute, but still feel like keeping it here :) .
 			return $sanitized_input;
 		}
 
@@ -153,15 +159,16 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 		 * @return void
 		 */
 		public function render_image_quality_field() {
-			// Lets initialize our variables
+			// Lets initialize our variables.
 			$setting_id       = GS_IQ_PREFIX . '_image_quality';
 			$gs_image_quality = GS_Image_Quality::get_instance();
 			$quality          = esc_attr( $gs_image_quality->get_image_quality() );
 
-			echo "<input type='number' name='{$setting_id}' id='{$setting_id}' min='1' max='100' value='{$quality}' />";
+			echo "<input type='number' name='" . esc_attr( $setting_id ) . "' id='" . esc_attr( $setting_id ) . "' min='1' max='100' value='" . esc_attr( $quality ) . "' />";
 			?> <span class="description"><?php esc_html_e( 'Set value between 1 to 100', 'image-quality' ); ?></span>
+			<?php /* translators: %s: Number 90 */ ?>
 			<p class="description"><?php printf( esc_html__( 'By default WordPress uses %s', 'image-quality' ), '<b>90</b>' ); ?></p>
-												 <?php
+			<?php
 		}
 
 		/**

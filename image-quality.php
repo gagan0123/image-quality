@@ -10,6 +10,8 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: image-quality
  * Domain Path: /languages
+ *
+ * @package Image_Quality
  */
 
 // If this file is called directly, abort.
