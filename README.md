@@ -3,6 +3,7 @@
 
 # Image Quality #
 **Contributors:** [gagan0123](https://profiles.wordpress.org/gagan0123)  
+**Donate Link:** PayPal.me/gagan0123  
 **Tags:** image, jpeg, compression, thumbnails, media  
 **Requires at least:** 2.8  
 **Requires PHP:** 5.6  
