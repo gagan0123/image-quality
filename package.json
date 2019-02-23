@@ -1,6 +1,6 @@
 {
-    "name": "Image Quality",
-    "version": "1.3",
+    "name": "image-quality",
+    "version": "1.5",
     "main": "image-quality.php",
     "repository": {
         "type": "git",
