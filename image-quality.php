@@ -1,16 +1,15 @@
 <?php
-
-/*
-  Plugin Name: Image Quality
-  Plugin URI:  https://wordpress.org/plugins/image-quality/
-  Description: Plugin to let you adjust compression ratio WordPress uses in media settings
-  Version:     1.5
-  Author:      Gagan Deep Singh
-  Author URI:  https://gagan0123.com
-  License:     GPLv2
-  License URI: https://www.gnu.org/licenses/gpl-2.0.html
-  Text Domain: image-quality
-  Domain Path: /languages
+/**
+ * Plugin Name: Image Quality
+ * Plugin URI:  https://wordpress.org/plugins/image-quality/
+ * Description: Plugin to let you adjust compression ratio WordPress uses in media settings
+ * Version:     1.5
+ * Author:      Gagan Deep Singh
+ * Author URI:  https://gagan0123.com
+ * License:     GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: image-quality
+ * Domain Path: /languages
  */
 
 // If this file is called directly, abort.
