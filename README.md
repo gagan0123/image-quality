@@ -41,24 +41,28 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 ## Changelog ##
 
+### 1.5.1 ###
+* Adhering to WordPress coding standards.
+* Localization string correction.
+
 ### 1.5 ###
-* Better escaping of admin screen outputs
-* Added settings action link on the plugins page for easy access
-* Better documentation
+* Better escaping of admin screen outputs.
+* Added settings action link on the plugins page for easy access.
+* Better documentation.
 
 ### 1.4 ###
-* Updated the changelog order
-* Updated WordPress' compatibility version
+* Updated the changelog order.
+* Updated WordPress' compatibility version.
 
 ### 1.3 ###
-* Removed an unused variable causing issues while debug mode is on
+* Removed an unused variable causing issues while debug mode is on.
 
 ### 1.2 ###
-* Another correction for localization
-* Fixing tags
+* Another correction for localization.
+* Fixing tags.
 
 ### 1.1 ###
-* Fixed text domain for localization
+* Fixed text domain for localization.
 
 ### 1.0 ###
-* Initial Public Release
+* Initial Public Release.
