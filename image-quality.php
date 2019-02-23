@@ -14,40 +14,40 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
 
-if ( !defined( 'GS_IQ_PREFIX' ) ) {
+if ( ! defined( 'GS_IQ_PREFIX' ) ) {
 	/**
 	 * Prefix for most of the things in this plugin
-	 * 
+	 *
 	 * @since 1.0
 	 */
 	define( 'GS_IQ_PREFIX', 'gs_iq' );
 }
-if ( !defined( 'GS_IQ_PATH' ) ) {
+if ( ! defined( 'GS_IQ_PATH' ) ) {
 	/**
 	 * Path to the plugin directory
-	 * 
+	 *
 	 * @since 1.0
 	 */
 	define( 'GS_IQ_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 }
 
-if ( !defined( 'GS_IQ_SETTINGS_SLUG' ) ) {
+if ( ! defined( 'GS_IQ_SETTINGS_SLUG' ) ) {
 	/**
 	 * Settings slug
-	 * 
+	 *
 	 * @since 1.0
 	 */
 	define( 'GS_IQ_SETTINGS_SLUG', GS_IQ_PREFIX . '_image_quality' );
 }
 
-if ( !defined( 'GS_IQ_BASENAME' ) ) {
+if ( ! defined( 'GS_IQ_BASENAME' ) ) {
 	/**
 	 * Basename of the plugin
-	 * 
+	 *
 	 * @since 1.5
 	 */
 	define( 'GS_IQ_BASENAME', plugin_basename( __FILE__ ) );
