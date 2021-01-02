@@ -38,6 +38,10 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 == Changelog ==
 
+= 1.5.2 =
+* Tested compatibility with WordPress 5.6
+* Corrected one escaping function from esc_attr to esc_url.
+
 = 1.5.1 =
 * Adhering to WordPress coding standards.
 * Localization string correction.
