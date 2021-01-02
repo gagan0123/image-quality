@@ -187,7 +187,7 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 			$path       = 'options-media.php#' . $setting_id;
 			$url        = admin_url( $path );
 
-			$settings_tag = '<a href="' . esc_attr( $url ) . '" aria-label="'
+			$settings_tag = '<a href="' . esc_url( $url ) . '" aria-label="'
 			. esc_attr__( 'Image Quality Setting', 'image-quality' ) . '">'
 			. esc_html__( 'Settings', 'image-quality' ) . '</a>';
 
