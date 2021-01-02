@@ -1,6 +1,6 @@
 {
     "name": "image-quality",
-    "version": "1.5",
+    "version": "1.5.2",
     "main": "image-quality.php",
     "repository": {
         "type": "git",
@@ -15,10 +15,10 @@
     "author": "Gagan Deep Singh",
     "license": "GPL-2.0",
     "devDependencies": {
-        "grunt-wp-i18n": "^1.0.3",
+        "grunt": "^1.3.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-wp-i18n": "^1.0.0",
         "grunt-wp-readme-to-markdown": "^2.0.1"
     },
-    "dependencies": {
-        "grunt": "^1.1.0"
-    }
+    "dependencies": {}
 }
