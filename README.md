@@ -7,8 +7,8 @@
 **Tags:** image, jpeg, compression, thumbnails, media  
 **Requires at least:** 2.8  
 **Requires PHP:** 5.6  
-**Tested up to:** 5.4  
-**Stable tag:** 1.5.1  
+**Tested up to:** 5.6  
+**Stable tag:** 1.5.2  
 **License:** GPLv2  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -42,6 +42,10 @@ but only changes the quality of the thumbnails WordPress generates from that ima
 
 
 ## Changelog ##
+
+### 1.5.2 ###
+* Tested compatibility with WordPress 5.6
+* Corrected one escaping function from esc_attr to esc_url.
 
 ### 1.5.1 ###
 * Adhering to WordPress coding standards.
