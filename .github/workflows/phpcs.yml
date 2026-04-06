@@ -9,21 +9,16 @@ on:
 jobs:
   phpcs:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        php-version: ['7.4', '8.0', '8.1', '8.2', '8.3']
-
-    name: PHPCS - PHP ${{ matrix.php-version }}
+    name: PHPCS
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up PHP ${{ matrix.php-version }}
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: ${{ matrix.php-version }}
+          php-version: '8.3'
           tools: cs2pr, phpcs
 
       - name: Install WordPress Coding Standards
