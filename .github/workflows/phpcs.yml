@@ -1,0 +1,30 @@
+name: PHP CodeSniffer
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  phpcs:
+    runs-on: ubuntu-latest
+    name: PHPCS
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: cs2pr, phpcs
+
+      - name: Install WordPress Coding Standards
+        run: |
+          composer global config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+          composer global require --dev dealerdirect/phpcodesniffer-composer-installer wp-coding-standards/wpcs
+
+      - name: Run PHPCS
+        run: phpcs -q --report=checkstyle | cs2pr

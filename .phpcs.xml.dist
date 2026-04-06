@@ -21,9 +21,6 @@
 	<!-- Exclude the bin directory. -->
 	<exclude-pattern>/bin/*</exclude-pattern>
 
-	<!-- Exclude Gruntfile.js. -->
-	<exclude-pattern>Gruntfile.js</exclude-pattern>
-
     <!-- Exclude minified resources. -->
     <exclude-pattern>*.min.js</exclude-pattern>
     <exclude-pattern>*.min.css</exclude-pattern>

@@ -199,7 +199,6 @@ if ( ! class_exists( 'GS_Image_Quality_Admin' ) ) {
 			);
 			return $new_actions;
 		}
-
 	}
 
 	GS_Image_Quality_Admin::get_instance();
