@@ -5,8 +5,8 @@
 **Contributors:** [gagan0123](https://profiles.wordpress.org/gagan0123)  
 **Donate Link:** PayPal.me/gagan0123  
 **Tags:** image, jpeg, compression, thumbnails, media  
-**Requires at least:** 6.0  
-**Requires PHP:** 7.4  
+**Requires at least:** 2.8  
+**Requires PHP:** 7.2  
 **Tested up to:** 6.7  
 **Stable tag:** 1.5.2  
 **License:** GPLv2  

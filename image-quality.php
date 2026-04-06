@@ -6,8 +6,8 @@
  * Version:     1.5.2
  * Author:      Gagan Deep Singh
  * Author URI:  https://gagan0123.com
- * Requires at least: 6.0
- * Requires PHP: 7.4
+ * Requires at least: 2.8
+ * Requires PHP: 7.2
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: image-quality
