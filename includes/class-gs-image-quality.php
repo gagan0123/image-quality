@@ -102,7 +102,6 @@ if ( ! class_exists( 'GS_Image_Quality' ) ) {
 		public function get_image_quality() {
 			return $this->image_quality;
 		}
-
 	}
 
 	GS_Image_Quality::get_instance();
